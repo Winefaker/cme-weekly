@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Impact model · CME Weekly</title>
+<script>(function(){try{var t=localStorage.getItem("cme-theme");if(t==="light"||t==="dark"){document.documentElement.setAttribute("data-theme",t)}}catch(e){}})();</script>
+<meta name="description" content="A weekly digest of new papers in computational materials science, ranked with a day-one impact model.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#f7f6f2">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#141513">
+<meta name="application-name" content="CME Weekly">
+<meta name="apple-mobile-web-app-title" content="CME Weekly">
+<link rel="canonical" href="https://winefaker.github.io/cme-weekly/model.html">
+<meta property="og:site_name" content="CME Weekly">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Impact model · CME Weekly">
+<meta property="og:description" content="A weekly digest of new papers in computational materials science, ranked with a day-one impact model.">
+<meta property="og:image" content="https://winefaker.github.io/cme-weekly/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="CME Weekly — A weekly digest of new papers in computational materials science">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Impact model · CME Weekly">
+<meta name="twitter:description" content="A weekly digest of new papers in computational materials science, ranked with a day-one impact model.">
+<meta name="twitter:image" content="https://winefaker.github.io/cme-weekly/og.png">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="favicon-512.png" sizes="512x512">
+<link rel="manifest" href="site.webmanifest">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,500;1,6..72,600&amp;display=swap">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="site-header__inner">
+    <div class="brand">
+      <a class="brand__name" href="index.html">CME Weekly</a>
+      <div class="brand__tagline-wrap"><p class="brand__tagline">A weekly digest of new papers in computational materials science</p></div>
+    </div>
+    <nav class="site-nav" aria-label="Primary" data-nav-active="model">
+      <ul class="site-nav__list">
+        <li><a href="index.html" data-nav="latest">Latest</a></li>
+        <li><a href="archive.html" data-nav="archive">Archive</a></li>
+        <li><a href="about.html" data-nav="about">About</a></li>
+        <li><a href="model.html" data-nav="model">Impact model</a></li>
+      </ul>
+    </nav>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark theme" title="Switch to dark theme" aria-pressed="false">
+      <svg class="theme-toggle__icon theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      <svg class="theme-toggle__icon theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+    </button>
+  </div>
+</header>
+<main id="main" class="site-main" tabindex="-1">
+  <div class="site-main__inner">
+<div class="prose-page">
+  <header class="prose-head">
+    <h1 class="prose-title">Impact model</h1>
+    <p class="prose-subtitle">What the impact score means and how well it works</p>
+  </header>
+  <details class="toc toc-mobile">
+    <summary>Contents</summary><ol class="toc-list">
+<li><a href="#what-the-score-means">What the score means</a>
+</li>
+<li><a href="#what-it-looks-at">What it looks at</a>
+</li>
+<li><a href="#how-well-it-works">How well it works</a>
+</li>
+<li><a href="#missing-scores-and-estimates">Missing scores and estimates</a>
+</li>
+<li><a href="#limits">Limits</a>
+</li></ol></details>
+  <nav class="toc toc-side" aria-labelledby="prose-toc-label">
+    <p class="toc-label" id="prose-toc-label">Contents</p><ol class="toc-list">
+<li><a href="#what-the-score-means">What the score means</a>
+</li>
+<li><a href="#what-it-looks-at">What it looks at</a>
+</li>
+<li><a href="#how-well-it-works">How well it works</a>
+</li>
+<li><a href="#missing-scores-and-estimates">Missing scores and estimates</a>
+</li>
+<li><a href="#limits">Limits</a>
+</li></ol></nav>
+  <article class="prose">
+<h2 id="what-the-score-means">What the score means<a class="anchor" href="#what-the-score-means" aria-label="Link to this section">#</a></h2>
+<p>The impact score is an estimate of the probability that a paper ends up in the top 10 % most-cited papers of its field for its publication year. It uses only information available on the day the paper appears, so it works for papers that have no citations yet.</p>
+<h2 id="what-it-looks-at">What it looks at<a class="anchor" href="#what-it-looks-at" aria-label="Link to this section">#</a></h2>
+<p>Four broad kinds of information feed the score: the venue, the authors' recent track record, basic facts about the paper, and how fast its topic is growing. The score does not read the paper's text.</p>
+<h2 id="how-well-it-works">How well it works<a class="anchor" href="#how-well-it-works" aria-label="Link to this section">#</a></h2>
+<p>The model was trained on papers from one year and tested on papers from the following year, so every test paper was unseen during training.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Ranking by</th><th>Ranking quality (AUC)</th></tr></thead>
+<tbody>
+<tr><td>Journal alone</td><td>0.79</td></tr>
+<tr><td>Impact model</td><td>0.84</td></tr>
+</tbody>
+</table></div>
+<p>Among the tenth of test papers it ranked highest, 93 % really did reach the top 10 %. The gain over journal rank is largest outside the most selective journals, where most highly cited papers in the test year were published.</p>
+<h2 id="missing-scores-and-estimates">Missing scores and estimates<a class="anchor" href="#missing-scores-and-estimates" aria-label="Link to this section">#</a></h2>
+<ul>
+<li><strong>Reviews</strong> get no score, because reviews are cited for different reasons than research papers.</li>
+<li><strong>Preprints</strong> are still chosen with the version of the model that ignores the venue, but their impact meter shows something simpler: the share of recent arXiv preprints in the same topics whose first and last authors have fewer citations over the past three years. It appears as a dashed meter and is not a probability. No meter appears when the last author's publication record cannot be found.</li>
+<li><strong>Unfamiliar journals</strong> get an estimate from a version of the model that ignores the venue. It appears as a dashed meter marked "est." and is less reliable.</li>
+</ul>
+<h2 id="limits">Limits<a class="anchor" href="#limits" aria-label="Link to this section">#</a></h2>
+<ul>
+<li>The score ranks papers. It does not judge their quality, and a low score is not a reason to skip a paper.</li>
+<li>It was validated on one pair of years and on papers from established journals, so small differences between papers are noise.</li>
+<li>Citations measure attention, not correctness.</li>
+</ul>
+  </article>
+</div>
+<script>
+(function () {
+  var CME = window.CME = window.CME || {};
+  function init(root) {
+    root = root || document;
+    var article = root.querySelector('.prose');
+    var links = Array.prototype.slice.call(root.querySelectorAll('.toc-list a[href^="#"]'));
+    if (!article || !links.length) return;
+    var byId = {};
+    links.forEach(function (a) {
+      var id = decodeURIComponent(a.getAttribute('href').slice(1));
+      (byId[id] = byId[id] || []).push(a);
+    });
+    var heads = Array.prototype.slice.call(article.querySelectorAll('h1[id],h2[id],h3[id],h4[id]'))
+      .filter(function (h) { return byId[h.id]; });
+    if (!heads.length) return;
+
+    // narrow screens: close the <details> after a link is chosen
+    var mobile = root.querySelector('.toc-mobile');
+    if (mobile) mobile.addEventListener('click', function (e) {
+      if (e.target.closest('a')) mobile.open = false;
+    });
+    if (!('IntersectionObserver' in window)) return;
+
+    var current = null;
+    function setCurrent(id) {
+      if (id === current) return;
+      current = id;
+      links.forEach(function (a) { a.removeAttribute('aria-current'); });
+      (byId[id] || []).forEach(function (a) {
+        a.setAttribute('aria-current', 'location');
+        var side = a.closest('.toc-side');
+        if (side && side.scrollHeight > side.clientHeight) {
+          var r = a.getBoundingClientRect(), s = side.getBoundingClientRect();
+          if (r.top < s.top + 8 || r.bottom > s.bottom - 8) side.scrollTop += (r.top - s.top) - s.height / 2;
+        }
+      });
+    }
+    function update() {
+      var line = window.innerHeight * 0.25, pick = heads[0];
+      for (var i = 0; i < heads.length; i++) {
+        if (heads[i].getBoundingClientRect().top <= line) pick = heads[i]; else break;
+      }
+      var doc = document.documentElement;
+      if (window.innerHeight + window.pageYOffset >= doc.scrollHeight - 2) pick = heads[heads.length - 1];
+      setCurrent(pick.id);
+    }
+    // the observer fires whenever a heading crosses the 25 % line; a passive scroll
+    // listener (rAF-throttled) only settles the end-of-page case
+    var io = new IntersectionObserver(function () { update(); }, { rootMargin: '-25% 0px -60% 0px', threshold: [0, 1] });
+    heads.forEach(function (h) { io.observe(h); });
+    var ticking = false;
+    window.addEventListener('scroll', function () {
+      if (ticking) return;
+      ticking = true;
+      window.requestAnimationFrame(function () { ticking = false; update(); });
+    }, { passive: true });
+    window.addEventListener('hashchange', update);
+    update();
+  }
+  CME.toc = { init: init };
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', function () { init(); });
+  else init();
+})();
+</script>
+
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <p class="site-footer__about"><a class="site-footer__brand" href="index.html">CME Weekly</a> is a weekly digest of new papers in computational materials science, drawn from OpenAlex and arXiv. Impact score = the day-one model's probability of landing in the field's top 10 % — <a href="model.html">how the model works</a>.</p>
+    <p class="site-footer__built">Built 2026-09-15</p>
+  </div>
+</footer>
+<script src="assets/site.js" defer></script>
+</body>
+</html>
