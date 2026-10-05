@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="CME Weekly">
+  <!-- CME Weekly mark: an open ring (the C) with a dot in its mouth (one issue in the weekly cycle).
+       Adapts to the browser's colour scheme: ink tile on light tab bars, paper tile on dark ones.
+       The dot uses the site accent from theme.css (#6ccab6, the dark-theme accent, on the ink tile;
+       #0f6b5f, the light-theme accent, on the paper tile). Update both .dot rules if the accent changes.
+       Note for editors: XML comments must not contain two consecutive hyphens. -->
+  <style>
+    .tile{fill:#1b1b19}
+    .mark{fill:none;stroke:#f7f6f2;stroke-width:8;stroke-linecap:round}
+    .dot{fill:#6ccab6}
+    @media (prefers-color-scheme:dark){
+      .tile{fill:#f2f0ea}
+      .mark{stroke:#1b1b19}
+      .dot{fill:#0f6b5f}
+    }
+  </style>
+  <rect class="tile" width="64" height="64" rx="14"/>
+  <path class="mark" d="M39.98 16.99 A17 17 0 1 0 39.98 47.01"/>
+  <circle class="dot" cx="46.5" cy="32" r="4.6"/>
+</svg>
