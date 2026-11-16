@@ -1,0 +1,7 @@
+# CME Weekly — everything is public.
+User-agent: *
+Allow: /
+
+# The Sitemap line needs an ABSOLUTE URL. The builder replaces https://winefaker.github.io/cme-weekly/ with the site's public URL
+# (trailing slash, e.g. https://example.org/cmeweekly/) and must drop the line when that URL is unknown.
+Sitemap: https://winefaker.github.io/cme-weekly/sitemap.xml
